@@ -1,0 +1,5 @@
+bands: 6
+samples: 400
+lines: 400
+datatype: byte
+filetype: Standard Image
