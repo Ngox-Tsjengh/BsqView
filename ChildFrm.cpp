@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "Bsqview.h"
+#include "BsqView.h"
 
 #include "ChildFrm.h"
 
@@ -44,7 +44,7 @@ BOOL CChildFrame::PreCreateWindow(CREATESTRUCT& cs)
 
 	if( !CMDIChildWnd::PreCreateWindow(cs) )
 		return FALSE;
-
+    
 	return TRUE;
 }
 

@@ -1,24 +1,24 @@
-# Microsoft Developer Studio Project File - Name="Bsqview" - Package Owner=<4>
+# Microsoft Developer Studio Project File - Name="BsqView" - Package Owner=<4>
 # Microsoft Developer Studio Generated Build File, Format Version 6.00
 # ** DO NOT EDIT **
 
 # TARGTYPE "Win32 (x86) Application" 0x0101
 
-CFG=Bsqview - Win32 Debug
+CFG=BsqView - Win32 Debug
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "Bsqview.mak".
+!MESSAGE NMAKE /f "BsqView.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "Bsqview.mak" CFG="Bsqview - Win32 Debug"
+!MESSAGE NMAKE /f "BsqView.mak" CFG="BsqView - Win32 Debug"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
-!MESSAGE "Bsqview - Win32 Release" (based on "Win32 (x86) Application")
-!MESSAGE "Bsqview - Win32 Debug" (based on "Win32 (x86) Application")
+!MESSAGE "BsqView - Win32 Release" (based on "Win32 (x86) Application")
+!MESSAGE "BsqView - Win32 Debug" (based on "Win32 (x86) Application")
 !MESSAGE 
 
 # Begin Project
@@ -29,7 +29,7 @@ CPP=cl.exe
 MTL=midl.exe
 RSC=rc.exe
 
-!IF  "$(CFG)" == "Bsqview - Win32 Release"
+!IF  "$(CFG)" == "BsqView - Win32 Release"
 
 # PROP BASE Use_MFC 6
 # PROP BASE Use_Debug_Libraries 0
@@ -54,7 +54,7 @@ LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
 # ADD LINK32 /nologo /subsystem:windows /machine:I386
 
-!ELSEIF  "$(CFG)" == "Bsqview - Win32 Debug"
+!ELSEIF  "$(CFG)" == "BsqView - Win32 Debug"
 
 # PROP BASE Use_MFC 6
 # PROP BASE Use_Debug_Libraries 1
@@ -65,9 +65,10 @@ LINK32=link.exe
 # PROP Use_Debug_Libraries 1
 # PROP Output_Dir "Debug"
 # PROP Intermediate_Dir "Debug"
+# PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
-# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ  /c
-# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Yu"stdafx.h" /FD /GZ   /c
+# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR /Yu"stdafx.h" /FD /GZ /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x804 /d "_DEBUG" /d "_AFXDLL"
@@ -83,26 +84,34 @@ LINK32=link.exe
 
 # Begin Target
 
-# Name "Bsqview - Win32 Release"
-# Name "Bsqview - Win32 Debug"
+# Name "BsqView - Win32 Release"
+# Name "BsqView - Win32 Debug"
 # Begin Group "Source Files"
 
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\Bsqview.cpp
+SOURCE=.\BandMath.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Bsqview.rc
+SOURCE=.\BigImageDlg.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\BsqviewDoc.cpp
+SOURCE=.\BsqView.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\BsqviewView.cpp
+SOURCE=.\BsqView.rc
+# End Source File
+# Begin Source File
+
+SOURCE=.\BsqViewDoc.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\BsqViewView.cpp
 # End Source File
 # Begin Source File
 
@@ -110,7 +119,15 @@ SOURCE=.\ChildFrm.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\ImageInitiate.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\MainFrm.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SelBandsDlg.cpp
 # End Source File
 # Begin Source File
 
@@ -123,15 +140,23 @@ SOURCE=.\StdAfx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\Bsqview.h
+SOURCE=.\BandMath.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\BsqviewDoc.h
+SOURCE=.\BigImageDlg.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\BsqviewView.h
+SOURCE=.\BsqView.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BsqViewDoc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BsqViewView.h
 # End Source File
 # Begin Source File
 
@@ -139,7 +164,15 @@ SOURCE=.\ChildFrm.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\ImageInitiate.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\MainFrm.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MDParaDlg.h
 # End Source File
 # Begin Source File
 
@@ -147,7 +180,15 @@ SOURCE=.\Resource.h
 # End Source File
 # Begin Source File
 
+SOURCE=.\SelBandsDlg.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Supervised.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
@@ -155,15 +196,19 @@ SOURCE=.\StdAfx.h
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 # Begin Source File
 
-SOURCE=.\res\Bsqview.ico
+SOURCE=.\res\BsqView.ico
 # End Source File
 # Begin Source File
 
-SOURCE=.\res\Bsqview.rc2
+SOURCE=.\res\BsqView.rc2
 # End Source File
 # Begin Source File
 
-SOURCE=.\res\BsqviewDoc.ico
+SOURCE=.\res\BsqViewDoc.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\cursor1.cur
 # End Source File
 # Begin Source File
 

@@ -2,8 +2,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_MAINFRM_H__670D4FE5_D3D5_4213_8017_C4A09C71D4E8__INCLUDED_)
-#define AFX_MAINFRM_H__670D4FE5_D3D5_4213_8017_C4A09C71D4E8__INCLUDED_
+#if !defined(AFX_MAINFRM_H__E22359B7_21D3_40A1_BEA4_1F7693285A24__INCLUDED_)
+#define AFX_MAINFRM_H__E22359B7_21D3_40A1_BEA4_1F7693285A24__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
@@ -17,6 +17,7 @@ public:
 
 // Attributes
 public:
+	CStatusBar  m_wndStatusBar;
 
 // Operations
 public:
@@ -36,15 +37,13 @@ public:
 #endif
 
 protected:  // control bar embedded members
-	CStatusBar  m_wndStatusBar;
+
 	CToolBar    m_wndToolBar;
 
 // Generated message map functions
 protected:
 	//{{AFX_MSG(CMainFrame)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-		// NOTE - the ClassWizard will add and remove member functions here.
-		//    DO NOT EDIT what you see in these blocks of generated code!
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
@@ -54,4 +53,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_MAINFRM_H__670D4FE5_D3D5_4213_8017_C4A09C71D4E8__INCLUDED_)
+#endif // !defined(AFX_MAINFRM_H__E22359B7_21D3_40A1_BEA4_1F7693285A24__INCLUDED_)

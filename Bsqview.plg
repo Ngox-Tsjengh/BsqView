@@ -3,14 +3,56 @@
 <pre>
 <h1>Build Log</h1>
 <h3>
---------------------Configuration: Bsqview - Win32 Debug--------------------
+--------------------Configuration: BsqView - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPF1B2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/BsqView.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\lenovo\Desktop\2019-遥感地学分析与计算（5_6-5_23）\第1周\2-影像读显\Bsqview原型+NDVI\BandMath.cpp"
+]
+Creating command line "cl.exe @C:\Users\lenovo\AppData\Local\Temp\RSPF1B2.tmp" 
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPF1B3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/BsqView.pdb" /debug /machine:I386 /out:"Debug/BsqView.exe" /pdbtype:sept 
+".\Debug\BandMath.obj"
+".\Debug\BigImageDlg.obj"
+".\Debug\BsqView.obj"
+".\Debug\BsqViewDoc.obj"
+".\Debug\BsqViewView.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\ImageInitiate.obj"
+".\Debug\MainFrm.obj"
+".\Debug\SelBandsDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\BsqView.res"
+]
+Creating command line "link.exe @C:\Users\lenovo\AppData\Local\Temp\RSPF1B3.tmp"
+<h3>Output Window</h3>
+Compiling...
+BandMath.cpp
+Linking...
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSPF260.tmp" with contents
+[
+/nologo /o"Debug/BsqView.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\BandMath.sbr"
+".\Debug\BigImageDlg.sbr"
+".\Debug\BsqView.sbr"
+".\Debug\BsqViewDoc.sbr"
+".\Debug\BsqViewView.sbr"
+".\Debug\ChildFrm.sbr"
+".\Debug\ImageInitiate.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\SelBandsDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\lenovo\AppData\Local\Temp\RSPF260.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
 
 
 
 <h3>Results</h3>
-Bsqview.exe - 0 error(s), 0 warning(s)
+BsqView.exe - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

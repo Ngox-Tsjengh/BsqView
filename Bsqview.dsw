@@ -3,7 +3,7 @@ Microsoft Developer Studio Workspace File, Format Version 6.00
 
 ###############################################################################
 
-Project: "Bsqview"=.\Bsqview.dsp - Package Owner=<4>
+Project: "BsqView"=".\BsqView.dsp" - Package Owner=<4>
 
 Package=<5>
 {{{

@@ -1,10 +1,10 @@
-// BsqviewDoc.cpp : implementation of the CBsqviewDoc class
+// BsqViewDoc.cpp : implementation of the CBsqViewDoc class
 //
 
 #include "stdafx.h"
-#include "Bsqview.h"
+#include "BsqView.h"
 
-#include "BsqviewDoc.h"
+#include "BsqViewDoc.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -13,31 +13,31 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewDoc
+// CBsqViewDoc
 
-IMPLEMENT_DYNCREATE(CBsqviewDoc, CDocument)
+IMPLEMENT_DYNCREATE(CBsqViewDoc, CDocument)
 
-BEGIN_MESSAGE_MAP(CBsqviewDoc, CDocument)
-	//{{AFX_MSG_MAP(CBsqviewDoc)
+BEGIN_MESSAGE_MAP(CBsqViewDoc, CDocument)
+	//{{AFX_MSG_MAP(CBsqViewDoc)
 		// NOTE - the ClassWizard will add and remove mapping macros here.
 		//    DO NOT EDIT what you see in these blocks of generated code!
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewDoc construction/destruction
+// CBsqViewDoc construction/destruction
 
-CBsqviewDoc::CBsqviewDoc()
+CBsqViewDoc::CBsqViewDoc()
 {
 	// TODO: add one-time construction code here
 
 }
 
-CBsqviewDoc::~CBsqviewDoc()
+CBsqViewDoc::~CBsqViewDoc()
 {
 }
 
-BOOL CBsqviewDoc::OnNewDocument()
+BOOL CBsqViewDoc::OnNewDocument()
 {
 	if (!CDocument::OnNewDocument())
 		return FALSE;
@@ -51,9 +51,9 @@ BOOL CBsqviewDoc::OnNewDocument()
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewDoc serialization
+// CBsqViewDoc serialization
 
-void CBsqviewDoc::Serialize(CArchive& ar)
+void CBsqViewDoc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
@@ -66,19 +66,19 @@ void CBsqviewDoc::Serialize(CArchive& ar)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewDoc diagnostics
+// CBsqViewDoc diagnostics
 
 #ifdef _DEBUG
-void CBsqviewDoc::AssertValid() const
+void CBsqViewDoc::AssertValid() const
 {
 	CDocument::AssertValid();
 }
 
-void CBsqviewDoc::Dump(CDumpContext& dc) const
+void CBsqViewDoc::Dump(CDumpContext& dc) const
 {
 	CDocument::Dump(dc);
 }
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewDoc commands
+// CBsqViewDoc commands

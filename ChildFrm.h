@@ -2,8 +2,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_CHILDFRM_H__9FE4D58A_0262_487A_94C3_292927D02332__INCLUDED_)
-#define AFX_CHILDFRM_H__9FE4D58A_0262_487A_94C3_292927D02332__INCLUDED_
+#if !defined(AFX_CHILDFRM_H__73035C90_8735_40E2_A400_4477B2620B93__INCLUDED_)
+#define AFX_CHILDFRM_H__73035C90_8735_40E2_A400_4477B2620B93__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
@@ -50,4 +50,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_CHILDFRM_H__9FE4D58A_0262_487A_94C3_292927D02332__INCLUDED_)
+#endif // !defined(AFX_CHILDFRM_H__73035C90_8735_40E2_A400_4477B2620B93__INCLUDED_)

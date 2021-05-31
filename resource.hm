@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by BsqView.rc
+//
+#define HIDC_EDIT2                      0x808203e9    // IDD_IMAGEINITIATE

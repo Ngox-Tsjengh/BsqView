@@ -1,13 +1,13 @@
-// Bsqview.cpp : Defines the class behaviors for the application.
+// BsqView.cpp : Defines the class behaviors for the application.
 //
 
 #include "stdafx.h"
-#include "Bsqview.h"
+#include "BsqView.h"
 
 #include "MainFrm.h"
 #include "ChildFrm.h"
-#include "BsqviewDoc.h"
-#include "BsqviewView.h"
+#include "BsqViewDoc.h"
+#include "BsqViewView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -16,10 +16,10 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewApp
+// CBsqViewApp
 
-BEGIN_MESSAGE_MAP(CBsqviewApp, CWinApp)
-	//{{AFX_MSG_MAP(CBsqviewApp)
+BEGIN_MESSAGE_MAP(CBsqViewApp, CWinApp)
+	//{{AFX_MSG_MAP(CBsqViewApp)
 	ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
 		// NOTE - the ClassWizard will add and remove mapping macros here.
 		//    DO NOT EDIT what you see in these blocks of generated code!
@@ -32,23 +32,23 @@ BEGIN_MESSAGE_MAP(CBsqviewApp, CWinApp)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewApp construction
+// CBsqViewApp construction
 
-CBsqviewApp::CBsqviewApp()
+CBsqViewApp::CBsqViewApp()
 {
 	// TODO: add construction code here,
 	// Place all significant initialization in InitInstance
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// The one and only CBsqviewApp object
+// The one and only CBsqViewApp object
 
-CBsqviewApp theApp;
+CBsqViewApp theApp;
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewApp initialization
+// CBsqViewApp initialization
 
-BOOL CBsqviewApp::InitInstance()
+BOOL CBsqViewApp::InitInstance()
 {
 	AfxEnableControlContainer();
 
@@ -76,9 +76,9 @@ BOOL CBsqviewApp::InitInstance()
 	CMultiDocTemplate* pDocTemplate;
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_BSQVIETYPE,
-		RUNTIME_CLASS(CBsqviewDoc),
+		RUNTIME_CLASS(CBsqViewDoc),
 		RUNTIME_CLASS(CChildFrame), // custom MDI child frame
-		RUNTIME_CLASS(CBsqviewView));
+		RUNTIME_CLASS(CBsqViewView));
 	AddDocTemplate(pDocTemplate);
 
 	// create main MDI Frame window
@@ -150,12 +150,11 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
 END_MESSAGE_MAP()
 
 // App command to run the dialog
-void CBsqviewApp::OnAppAbout()
+void CBsqViewApp::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CBsqviewApp message handlers
-
+// CBsqViewApp message handlers 
